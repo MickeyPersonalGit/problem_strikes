@@ -1,0 +1,20 @@
+{
+    "baseUrl":"http://localhost:3000",
+    "viewportHeight": 1000,
+    "viewportWidth": 1200,
+    "ignoreTestFiles": [
+        "**/__snapshots__/*",
+        "**/__image_snapshots__/*"
+      ],
+      "env": {
+        "cypress-plugin-snapshots": {
+          "imageConfig": {
+            "threshold": 0.005,
+            "thresholdType": "percent",
+            "resizeDevicePixelRatio": true
+          },
+          "diffLines": 3,
+          "autopassNewSnapshots": true
+        }
+      }
+}
