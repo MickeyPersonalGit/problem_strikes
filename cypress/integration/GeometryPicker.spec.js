@@ -215,7 +215,7 @@ describe('geometry app', () => {
     cy.get("canvas").toMatchImageSnapshot({name:`${Cypress.currentTest.title}_ at ${radiusSlider +'-top'}_${browser}`});
   })
 
-  it.only('should allow user to change the geometric shape (CUBE) colour', () => {
+  it('should allow user to change the geometric shape (CUBE) colour', () => {
     dashboard.geometrySelector().click()
     const shape = 'cube'
     cy.findByText('Cube').click()
@@ -243,7 +243,7 @@ describe('geometry app', () => {
     colourSelector(x, y)
   })
 
-  it.only('should allow user to change the geometric shape (SPHERE) colour', () => {
+  it('should allow user to change the geometric shape (SPHERE) colour', () => {
     dashboard.geometrySelector().click()
     const shape = 'sphere'
     cy.findByText('Sphere').click()
